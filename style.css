@@ -1,0 +1,271 @@
+body {
+    font-weight: 200;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f185, #54a15d);
+    /* color: rgb(73, 121, 1); */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 208, 208, 0.3);
+    z-index: -1;
+}
+
+.logo img {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-weight: 200;
+    color: rgb(54, 92, 0);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    /* transition: color 0.3s, transform 0.3s; */
+}
+
+nav ul li a:hover {
+    background-color: #023a0279;
+    color: #eaff00;
+    /* transform: scale(1.1); */
+}
+
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.413);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(73, 121, 1);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: 200;
+    color: rgb(73, 121, 1);
+    margin-top: 25px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-weight: 200;
+    color: rgb(73, 121, 1);
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+p, ul {
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgb(10, 105, 0);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.project-description {
+    text-align: center;
+}
+
+.project-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: rgb(73, 121, 1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1d4389;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    font-weight: 200;
+    background: #4f986b;
+    color: rgb(212, 255, 0);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #016938;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #d32f2f;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.success {
+    color: #2e7d32;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.comment {
+    background: #def7dba7;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 2px solid #327602;
+    transition: box-shadow 0.3s;
+}
+
+.comment:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.user{
+    color: #ba4f03;
+}
+.add-comment {
+    border-radius: 5px;
+    background-color: #def7dba7;
+    border: 1px solid #327602;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    align-items: center;
+    color: #327602;
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: color 0.3s;
+}
+
+.add-comment:hover {
+    background-color: #025f02bf;
+    color: #ffffff;
+    /* text-decoration: underline; */
+    /* transform: scale(1.1); */
+    border: 1px solid #ba4f03;
+}
+
+.github-link {
+    display: block;
+    text-align: center;
+    color: rgb(73, 121, 1);
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.github-link:hover {
+    background: #1e725c;
+    color: rgb(225, 255, 0);
+}
+
+.intro {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: #ddff00;
+}
+footer {
+    background: #3e885e;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    margin-top: auto;
+}

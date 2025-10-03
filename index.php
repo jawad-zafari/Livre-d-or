@@ -55,7 +55,7 @@ session_write_close(); // Fermer la session
                 <li>Partagez vos commentaires, visibles du plus récent au plus ancien.</li>
             </ul>
         </section>
-        <a href="https://github.com/prenom-nom/livre-or" target="_blank" class="github-link">Voir sur GitHub</a>
+        <a href="https://github.com/jawad-zafari/Livre-d-or" target="_blank" class="github-link">Voir sur GitHub</a>
     </main>
     <footer>
         <p>&copy; 2025 Livre d'Or</p>

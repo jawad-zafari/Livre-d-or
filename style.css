@@ -33,7 +33,11 @@ header::before {
     z-index: -1;
 }
 
+.logo {
+    color: #016938;
+}
 .logo img {
+    color: #016938;
     height: 60px;
     filter: brightness(0) invert(1);
 }
